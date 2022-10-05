@@ -42,7 +42,7 @@ const Login = () => {
       if (!err.status) {
         setErrMsg("No Server Response");
       } else if (err.status === 400) {
-        setErrMsg("Missing Username or Password");
+        setErrMsg("Missing or invalid Username or Password");
       } else if (err.status === 401) {
         setErrMsg("Unauthorized");
       } else {
